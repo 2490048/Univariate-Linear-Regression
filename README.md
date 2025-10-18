@@ -16,8 +16,6 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ## Program
 ```
 
-## REGISTER NUMBER : 212224230184
-## COMPLETED BY : NETHRA.K
 
 
 
