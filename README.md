@@ -14,59 +14,39 @@ To implement univariate Linear Regression to fit a straight line using least squ
 5.	Use the slope m and the y -intercept to form the equation of the line.
 6.	Obtain the straight line equation Y=mX+b and plot the scatterplot.
 ## Program
+Name : Rahul RP
+Reg Number: 212224240125
 ```
-
-
-
-
-import numpy as np
-X= np.array(eval(input()))
-Y= np.array(eval(input()))
-X_mean=np.mean(X)
-Y_mean=np.mean(Y)
-num=0
-denom=0
-for i in range(len(X)):
-  num+=(X[i]-X_mean)*(Y[i]-Y_mean)
-  denom=(X[i]-X_mean)**2
-  m=num/denom
-  c=Y_mean-m*X_mean
-  print(m,c)
-  Y_pred=m*X+c
-  print(Y_pred)
-
-  import matplotlib.pyplot as plt
-  plt.scatter(X,Y,color='RED')
-  plt.plot(X,Y_pred,color='blue')
-  plt.show()
-
-
-
+Program to QR decomposition using the Gram-Schmidt method
+ Developed by: ENBANaTHAN v
+ RegisterNumber: 212224220027
+ '''
+ import numpy as np
+ import matplotlib.pyplot as plt
+ x = np.array([0,1,2,3,4,5,6,7,8,9])
+ y = np.array([1,3,2,5,7,8,8,9,10,12])
+ plt.scatter(x,y)
+ plt.show()
+ xmean = np.mean(x)
+ymean = np.mean(y)
+ num=0
+ den=0
+ for i in range(len(x)):
+ num+=(x[i]-xmean)*(y[i]-ymean)
+ den+=(x[i]-xmean)**2
+ m = num/den
+ b = ymean - m*xmean
+ print(m,b)
+ ypred = m*x+b
+ print(ypred)
+ plt.scatter(x,y,color='Red')
+ plt.plot(x,ypred,color='Blue')
+ plt.show()
 
 
 ```
 ## Output
-</br>
-
-<img width="684" height="551" alt="Screenshot 2025-10-14 143458" src="https://github.com/user-attachments/assets/78510642-16e2-4947-bd8a-2e00e855ea30" />
-
-</br>
-
-<img width="752" height="564" alt="Screenshot 2025-10-14 143520" src="https://github.com/user-attachments/assets/39b8117b-1acf-4550-bbca-c31038b46e9c" />
-
-</br>
-
-<img width="689" height="507" alt="Screenshot 2025-10-14 143534" src="https://github.com/user-attachments/assets/da6f1dcb-2a85-4be3-b882-ba55b69f4a64" />
-
-</br>
-
-<img width="651" height="516" alt="Screenshot 2025-10-14 143553" src="https://github.com/user-attachments/assets/04af1765-2311-49e4-91a8-9058ac248d79" />
-
-</br>
-
-<img width="746" height="538" alt="Screenshot 2025-10-14 143605" src="https://github.com/user-attachments/assets/85fee704-b80b-4d57-bdea-1961c5d5fd89" />
-
-</br>
+<img width="648" height="690" alt="image" src="https://github.com/user-attachments/assets/eccd0a9c-944e-44e3-ac68-7285078f18ba" />
 
 ## Result
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares.
